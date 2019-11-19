@@ -9,6 +9,7 @@ import {
 
 import NestedRouting from "./components/_2NestedRouting/_2NestedRouting";
 import BasicRouting from "./components/_1BasicRouting/_1BasicRouting";
+import Tematy from "./components/Tematy/Tematy";
 
 class App extends Component {
 	render() {
@@ -18,12 +19,14 @@ class App extends Component {
 					<ul>
 						<li><Link to="/">Start</Link></li>
 						<li><Link to="/basicRouting">Basic Routing</Link></li>
-						<li><Link to="/nestedRouting">Nested Routing</Link>						</li>
+						<li><Link to="/nestedRouting">Nested Routing</Link></li>
+						<li><Link to="/tematy">Tematy</Link></li>
 					</ul>
 
 					<Switch>
 						<Route path="/basicRouting" component={BasicRouting} />
 						<Route path="/nestedRouting" component={NestedRouting}  />
+						<Route path="/tematy" component={Tematy}  />
 						<Route path="/" component={Start} />
 					</Switch>
 				</div>
