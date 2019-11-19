@@ -10,6 +10,7 @@ import {
 import NestedRouting from "./components/_2NestedRouting/_2NestedRouting";
 import BasicRouting from "./components/_1BasicRouting/_1BasicRouting";
 import Tematy from "./components/Tematy/Tematy";
+import Grupy from "./components/Grupy/Index";
 
 class App extends Component {
 	render() {
@@ -21,12 +22,14 @@ class App extends Component {
 						<li><Link to="/basicRouting">Basic Routing</Link></li>
 						<li><Link to="/nestedRouting">Nested Routing</Link></li>
 						<li><Link to="/tematy">Tematy</Link></li>
+						<li><Link to="/grupy">Grupy</Link></li>
 					</ul>
 
 					<Switch>
 						<Route path="/basicRouting" component={BasicRouting} />
 						<Route path="/nestedRouting" component={NestedRouting}  />
 						<Route path="/tematy" component={Tematy}  />
+						<Route path="/grupy" component={Grupy}  />
 						<Route path="/" component={Start} />
 					</Switch>
 				</div>

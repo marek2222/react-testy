@@ -4,7 +4,6 @@ import {
 	Switch,
 	Route,
 	Link,
-	useParams
 } from "react-router-dom";
 import Komponenty from "./Komponenty";
 import Propsy from "./Propsy";
