@@ -5,6 +5,7 @@ export default class Szczegoly extends Component {
     return (
       <div>
         <h3>Szczegóły - komponent</h3>
+        Nr: { this.props.match.params.id }
       </div>
     )
   }

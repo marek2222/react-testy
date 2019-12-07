@@ -12,6 +12,7 @@ import Szczegoly from "./Szczegoly";
 export default class Index extends Component {
   render() {
     const {	match } = this.props;
+    let nr = 4;
     return (
 			<Router>
 				<div>
@@ -19,8 +20,8 @@ export default class Index extends Component {
 					<hr />
 					<ul>
             <li><Link to={`${match.url}/nowy`}>Nowy</Link></li>
-						<li><Link to={`${match.url}/edycja`}>Edycja</Link></li>
-						<li><Link to={`${match.url}/szczegoly`}>Szczegóły</Link></li>
+						<li><Link to={`${match.url}/edycja/${nr}`}>Edycja</Link></li>
+						<li><Link to={`${match.url}/szczegoly/${nr}`}>Szczegóły</Link></li>
 						{/* <li><Link to={`${match.url}/beztematu`}>Bez tematu</Link></li> */}
 					</ul>
 					<Switch>
