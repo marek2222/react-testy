@@ -1,0 +1,52 @@
+
+
+D:\Dokumenty\_Project\_GitHub\reactjs\react-warsztaty>npm install webpack webpack-cli webpack-web-server
+
+
+http://tiny.cc/pakiety
+koopiuj dependency i devDependency
+
+npm install
+  --aby doinstalować potrzebne pakiety
+
+ wersja minimalnna
+
+
+
+------------------------
+webpack.config.js
+Webcpack odpowiada za minifikowania i pakowanie zawartości projektu;
+On go optymalizuje
+  module.exports = {
+    
+  }
+Webpack dociąga najnowsze wersje js ale kompiluje go do tej wersji 
+która jest wymagana przez nas.
+
+preset i plugin - w jaki sposób tworzyć kod albo jak ma być interpretowany
+jsx - pliki dla reacta
+kompilowane do jednego pliku index_bundle.html
+
+różnina między react-newProject
+Tutaj mamy kontrolę, żeby zamienić sasa zamiast css, więc konfigurujemy za pomocą webpacka
+
+wpisujemy kod do webpack.config.js
+
+
+
+---------------------------------
+konfigurajca samego babela
+dodaj plik .babelrc
+---------------------------------
+  "plugins": [
+    definiujemy nazwę naszefo pluginu
+  ],
+  "presets": []  
+
+
+---------------------------------
+Odpalamy server: 
+  npm start 
+
+---------------------------------
+mapy na leafleatjs.com
